@@ -59,7 +59,8 @@ function display20Flips() {
         Coin.flip();
         document.write(Coin.toString());
         results.push(Coin.toString());
-    }
+    } 
+    return results;
 }
 function display20Images() {
     const results = [];
@@ -71,6 +72,7 @@ function display20Images() {
         document.querySelector('body').appendChild(Coin.toHTML());
         results.push(Coin.toHTML());
     }
+    return results;
 }
 
 // extra code to insert a break between the text results and 
